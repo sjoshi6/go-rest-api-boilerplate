@@ -22,3 +22,7 @@ _testmain.go
 *.exe
 *.test
 *.prof
+vendor
+logs
+*.log
+*DS_Store
