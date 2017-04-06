@@ -8,9 +8,11 @@ import (
 	"github.com/urfave/negroni"
 )
 
+// LoggingMiddleWare is used to depict a request logger
 type LoggingMiddleWare struct {
 }
 
+// ServeHTTP implements the negroni middleware function
 func (lm *LoggingMiddleWare) ServeHTTP(rw http.ResponseWriter, r *http.Request, next http.HandlerFunc) {
 
 	t1 := time.Now()

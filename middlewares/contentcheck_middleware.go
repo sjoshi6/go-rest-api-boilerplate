@@ -8,9 +8,11 @@ import (
 
 var validContentTypes = []string{"application/json"}
 
+// ContentCheckMiddleware is used to check if content-Type of the POST Request is an acceptable type.
 type ContentCheckMiddleware struct {
 }
 
+// CheckContentType is used to check the real contents of Content-type in http header
 func CheckContentType(r *http.Request) bool {
 
 	if r.Method == http.MethodPost {
@@ -26,6 +28,7 @@ func CheckContentType(r *http.Request) bool {
 	return true
 }
 
+// ServeHTTP implements the negroni middleware function
 func (c *ContentCheckMiddleware) ServeHTTP(rw http.ResponseWriter, r *http.Request, next http.HandlerFunc) {
 
 	if CheckContentType(r) == false {

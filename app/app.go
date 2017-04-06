@@ -11,6 +11,7 @@ import (
 var app *mux.Router
 var negroniApp *negroni.Negroni
 
+// App is the main API application
 func App() *negroni.Negroni {
 	if app == nil {
 

@@ -10,4 +10,5 @@ type Route struct {
 	HandlerFunc http.HandlerFunc
 }
 
+// Routes is a collection of multiple http Routes
 type Routes []Route

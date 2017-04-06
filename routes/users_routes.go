@@ -2,7 +2,7 @@ package routes
 
 import "github.com/sjoshi6/go-rest-api-boilerplate/controllers"
 
-// TeamRoutes contains all urls related to a given team
+// UsersRoutes contains all urls related to User Resource.
 var UsersRoutes = Routes{
 	Route{
 		Name:        "GetUser",

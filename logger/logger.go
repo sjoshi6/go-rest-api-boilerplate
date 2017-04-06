@@ -9,6 +9,7 @@ import (
 
 var logger *logrus.Logger
 
+// GetLogger is used to return a singleton object of the logrus logger
 func GetLogger() *logrus.Logger {
 
 	if logger == nil {
