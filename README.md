@@ -7,12 +7,16 @@ Boiler plate for developing a go lang based REST API with commonly used open sou
 
 Run the below commands in order on commandline
 ```python
-go get -u github.com/Masterminds/glide.git
+# Install the glide package manager
+curl https://glide.sh/get | sh
 
 # Clone the boilerplate project
 git clone https://github.com/sjoshi6/go-rest-api-boilerplate.git
 
 cd go-rest-api-boilerplate
+
+# (Optional) Update the dependencies
+glide update
 
 # Installs all dependencies in project vendor folder.
 glide install
